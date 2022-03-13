@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "ton-machine v0.1"
+echo "ton-machine v1.0"
 if [ -z "${1}"  ]
 then
 
@@ -13,26 +13,29 @@ then
 echo "Usage: ton-machine [command]"
 echo "
 Commands:
+	-net <mainnet/testnet>
 	-api <API>
-	-json <Json seed-file path>
+	-key <JSON seed-file path>
+	-collection <JSON collection file>
 	-deploy -- Mint NFT my_collection
 	-usage -- Using an already created collection
 
 Example:
-	./ton-machine.sh -api 0000000000000000000000000000000000000000000000000000000000000000 -json my_nft.json
-	./ton-machine.sh -api 0000000000000000000000000000000000000000000000000000000000000000 -json my_nft.json -start
+	./ton-machine.sh -net testnet -api 0000000000000000000000000000000000000000000000000000000000000000 -key ./key.json -collection ./jsonCollection.json -deploy
+	./ton-machine.sh -net mainnet -api 0000000000000000000000000000000000000000000000000000000000000000 -key ./key.json -collection ./jsonCollection.json -usage
 	"
 
 fi
 
-if [[ $1 == -api ]]
+if [[ $9 == -deploy ]]
 then
-	python py/info.py $2
-	mv api.js ./ton-web-machine
+	node lib/deploy_collection.js $2 $4 $6 $8
 fi
 
-if [[ $3 == -deploy]]
+if [[ $9 == -usage ]]
 then
+	node lib/usage_collection.js $2 $4 $6 $8
+fi
 
 fi
 
