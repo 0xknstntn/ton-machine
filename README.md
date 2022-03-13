@@ -18,5 +18,5 @@ Working! (v1.0)
 	-api <API>
 	-key <JSON seed-file path>
 	-collection <JSON collection file>
-	-deploy -- Mint NFT my_collection
+	-deploy -- Mint NFT 
 	-usage -- Using an already created collection
