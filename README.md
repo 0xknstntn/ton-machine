@@ -10,7 +10,7 @@ Working! (v1.0)
 
 ### Usage
 
-	./ton-machine.sh -net <mainnet/testnet> -api <Your APi-key> -key ./key.json -collection ./jsonCollection.json -deploy/-usage
+	./ton-machine.sh -net <mainnet/testnet> -api <Your API-key> -key ./key.json -collection ./jsonCollection.json -deploy/-usage
 	
 
 ### Commands
