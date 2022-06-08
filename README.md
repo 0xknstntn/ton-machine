@@ -11,12 +11,13 @@ Not working! (v1.0)
 ### Usage
 
 	./ton-machine.sh -net <mainnet/testnet> -api <Your API-key> -key ./key.json -collection ./jsonCollection.json -deploy/-usage
-	
+	./ton-machine.sh -net <mainnet/testnet> -api <Your API-key> -key ./key.json -collection ./jsonCollection.json -deploy_jetton
 
 ### Commands
 	-net <mainnet/testnet>
 	-api <API>
 	-key <JSON seed-file path>
 	-collection <JSON collection file>
-	-deploy -- Mint NFT 
-	-usage -- Using an already created collection
+	-deploy_NFT -- Mint NFT 
+	-usage_NFT -- Using an already created collection
+	-deploy_jetton -- Mint Jetton
