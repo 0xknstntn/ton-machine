@@ -6,7 +6,7 @@ Command line interface to run NFT in TON
 
 ## State
 
-Not working! (v1.0)
+Working! (v1.0)
 
 ### Usage
 
