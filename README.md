@@ -1,8 +1,8 @@
-# TON-NFT-Machine
+# TON-Machine
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-Command line interface to run NFT in TON
+Command line interface to run NFT/JETTON in TON
 
 ## State
 
